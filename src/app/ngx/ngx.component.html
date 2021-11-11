@@ -1,0 +1,60 @@
+<div class="container">
+   <tabset>
+      <tab heading="Basic title" id="tab1">
+         <div class="container">
+            <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
+            </button>
+            <hr>
+            <div id="collapseBasic" [collapse]="isCollapsed">
+               <div class="well well-lg card card-block card-header">Some content</div>
+            </div>
+         </div>
+      </tab>
+
+      <tab heading="Basic Title 1">
+         <div class="container">
+            <div class="btn-group" dropdown>
+               <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                       aria-controls="dropdown-basic">
+                 Button dropdown <span class="caret"></span>
+               </button>
+               <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                   role="menu" aria-labelledby="button-basic">
+                 <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+                 <li class="divider dropdown-divider"></li>
+                 <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+                 </li>
+               </ul>
+             </div>
+         </div>   
+      </tab>
+
+      <tab heading="Basic Title 2">
+         <div class="container">
+            <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+         
+            <ng-template #template>
+            <div class="modal-header">
+               <h4 class="modal-title pull-left">Modal</h4>
+               <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+                  <span aria-hidden="true" class="visually-hidden">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               This is a modal.
+            </div>
+            </ng-template>
+         </div>
+      </tab>
+
+   </tabset>
+ </div>
+
+
+
+
+
+
