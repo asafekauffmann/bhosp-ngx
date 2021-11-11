@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './theme/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'bhosp-ngx';
+
+
+  constructor(private themeService: ThemeService) {}
+
+
+   toggle() {
+      const active = this.themeService.getActiveTheme() ;
+      if (active.name === 'light') {
+      this.themeService.setTheme('dark');
+      } else {
+      this.themeService.setTheme('light');
+      }
+   }
+
 }

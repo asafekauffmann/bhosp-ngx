@@ -9,17 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { TestStyleComponent } from './test-style/test-style.component';
-import { PlayerComponent } from './player/player.component';
-import { GameComponent } from './game/game.component';
+import { ThemeDirective } from './theme/theme.directive';
+import { ThemeModule } from './theme/theme.module';
+import { lightTheme } from './theme/light-theme';
+import { darkTheme } from './theme/dark-theme';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NgxComponent,
-    TestStyleComponent,
-    PlayerComponent,
-    GameComponent
+    ThemeDirective
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,11 @@ import { GameComponent } from './game/game.component';
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
