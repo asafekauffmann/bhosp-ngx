@@ -1,4 +1,4 @@
-import { Directive, OnInit, OnDestroy, ElementRef } from '@angular/core';
+/* import { Directive, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import { ThemeService } from './theme.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -30,4 +30,4 @@ export class ThemeDirective implements OnInit {
     }
   }
 
-}
+} */

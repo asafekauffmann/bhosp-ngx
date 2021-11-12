@@ -1,4 +1,4 @@
-import { Theme } from './symbols';
+/* import { Theme } from './symbols';
 
 export const darkTheme: Theme = {
   name: 'dark',
@@ -8,4 +8,4 @@ export const darkTheme: Theme = {
     '--primary': 'darkorange',
     '--on-primary': '#fff',
   }
-} 
+}  */

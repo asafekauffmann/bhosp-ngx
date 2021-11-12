@@ -1,4 +1,4 @@
-import { Injectable, Inject, EventEmitter } from '@angular/core';
+/* import { Injectable, Inject, EventEmitter } from '@angular/core';
 import { THEMES, ACTIVE_THEME, Theme } from './symbols';
 
 @Injectable()
@@ -25,4 +25,4 @@ export class ThemeService {
     this.themeChange.emit( this.getActiveTheme());
   }
 
-}
+} */
