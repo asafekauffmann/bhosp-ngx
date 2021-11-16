@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 /* 
 import { ThemeDirective } from './theme/theme.directive';
 import { ThemeModule } from './theme/theme.module';
@@ -30,7 +31,8 @@ import { darkTheme } from './theme/dark-theme';
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    BsDatepickerModule.forRoot()
     /* ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
       active: 'light'
