@@ -1,6 +1,6 @@
-import { Component, HostListener, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { BsDatepickerConfig, BsDatepickerDirective } from 'ngx-bootstrap/datepicker';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 
 @Component({
    selector: 'app-ngx',
@@ -8,14 +8,17 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
    styleUrls: ['./ngx.component.sass']
 })
 export class NgxComponent implements OnInit {
-   @ViewChild(BsDatepickerDirective, { static: false }) datepicker?: BsDatepickerDirective;
-
+   colorTheme = 'theme-green';
+   
+   bsConfig?: Partial<BsDatepickerConfig>;
 
    modalRef?: BsModalRef;
 
    isCollapsed = false;
 
-   constructor(private modalService: BsModalService) { }
+   constructor(private modalService: BsModalService) { 
+      
+   }
 
    ngOnInit(): void {
    }
@@ -24,11 +27,16 @@ export class NgxComponent implements OnInit {
       this.modalRef = this.modalService.show(template);
    }
 
-   @HostListener('window:scroll')
-   onScrollEvent() {
-      this.datepicker?.hide();
-   }
+   applyTheme(pop: any) {
+      // create new object on each property change
+      // so Angular can catch object reference change
+      this.bsConfig = Object.assign({}, { containerClass: this.colorTheme });
+      setTimeout(() => {
+        pop.show();
+      });
+    }
 
+  
 
 
  

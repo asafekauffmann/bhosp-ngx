@@ -10,6 +10,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { FormsModule } from '@angular/forms';
 /* 
 import { ThemeDirective } from './theme/theme.directive';
 import { ThemeModule } from './theme/theme.module';
@@ -32,7 +33,8 @@ import { darkTheme } from './theme/dark-theme';
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
     TabsModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    FormsModule
     /* ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
       active: 'light'
