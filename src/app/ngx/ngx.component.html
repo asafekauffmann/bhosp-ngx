@@ -109,29 +109,67 @@
 </div>
 
 
-<div class="container-fluid">
-   <div class="row">
-      <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
-         <input
-            placeholder="Datepicker"
-            class="form-control"
-            #dp="bsDatepicker"
-            bsDatepicker
-            [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY', containerClass: 'theme-red' }">
-      </div>
 
-      <div class="col-xs-12 col-12 col-md-3 form-group mb-3">
-        <button class="btn btn-success" (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen" type="button">Date Picker</button>
-      </div>
+<!-- <div class="row">
+   <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+      <input
+         placeholder="Datepicker"
+         class="form-control"
+         #dp="bsDatepicker"
+         bsDatepicker>
    </div>
-</div>
+
+   <div class="col-xs-12 col-12 col-md-3 form-group mb-3">
+      <button class="btn btn-success" (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen" type="button">Date Picker</button>
+   </div>
+</div> -->
 
 <div class="row">
-   <div class="col-xs-12 col-12 col-sm-6 col-md-5 form-group mb-3">
-     <p>Outside click closes the datepicker in this example</p>
-     <input class="form-control" placeholder="Datepicker" bsDatepicker [outsideClick]="true">
+   <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+     <input type="text"
+            placeholder="Datepicker"
+            class="form-control"
+            bsDatepicker>
    </div>
-</div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

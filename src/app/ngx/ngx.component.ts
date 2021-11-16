@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { BsDatepickerDirective } from 'ngx-bootstrap/datepicker';
+import { BsDatepickerConfig, BsDatepickerDirective } from 'ngx-bootstrap/datepicker';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
@@ -9,6 +9,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class NgxComponent implements OnInit {
    @ViewChild(BsDatepickerDirective, { static: false }) datepicker?: BsDatepickerDirective;
+
+   
    
    modalRef?: BsModalRef;
 
@@ -27,5 +29,9 @@ export class NgxComponent implements OnInit {
    onScrollEvent() {
       this.datepicker?.hide();
    }
+
+
+
+ 
 
 }
