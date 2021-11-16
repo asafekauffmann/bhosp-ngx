@@ -8,6 +8,9 @@ import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
    styleUrls: ['./ngx.component.sass']
 })
 export class NgxComponent implements OnInit {
+
+   mytime: Date = new Date();
+
    colorTheme = 'theme-green';
    
    bsConfig?: Partial<BsDatepickerConfig>;
