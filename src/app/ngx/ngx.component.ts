@@ -10,8 +10,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class NgxComponent implements OnInit {
    @ViewChild(BsDatepickerDirective, { static: false }) datepicker?: BsDatepickerDirective;
 
-   
-   
+
    modalRef?: BsModalRef;
 
    isCollapsed = false;
