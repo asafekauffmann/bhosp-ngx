@@ -25,13 +25,10 @@
 
 
 
-
-
-
-
 <div class="container">
    <tabset>
       <tab heading="Basic title" id="tab1">
+
          <div class="container">
             <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
@@ -41,9 +38,11 @@
                <div class="well well-lg card card-block card-header">Some content</div>
             </div>
          </div>
+
       </tab>
 
       <tab heading="Basic Title 1">
+
          <div class="container">
             <div class="btn-group" dropdown>
                <button id="button-basic" dropdownToggle type="button" class="btn dropdown-toggle"
@@ -61,28 +60,84 @@
                </ul>
              </div>
          </div>   
+
       </tab>
 
+
       <tab heading="Basic Title 2">
+
          <div class="container">
-            <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+            <button type="button" class="btn btn-primary" (click)="openModal(template)">
+               Create template modal
+            </button>
          
             <ng-template #template>
-            <div class="modal-header">
-               <h4 class="modal-title pull-left">Modal</h4>
-               <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
-                  <span aria-hidden="true" class="visually-hidden">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               This is a modal.
-            </div>
+               <div class="modal-header">
+                  <h4 class="modal-title pull-left">Modal</h4>
+                  <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+                     <span aria-hidden="true" class="visually-hidden">&times;</span>
+                  </button>
+               </div>
+
+               <div class="modal-body">
+                  This is a modal.
+               </div>
             </ng-template>
          </div>
+
       </tab>
 
    </tabset>
- </div>
+</div>
+
+
+<div class="container">
+   <div class="row">
+      <div class="col-4">
+         <h5>Tipo de exame</h5>
+      </div>
+         
+      <div class="col-4">
+         <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
