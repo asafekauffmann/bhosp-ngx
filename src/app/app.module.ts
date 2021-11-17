@@ -38,7 +38,6 @@ import { darkTheme } from './theme/dark-theme';
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     NgForm,
-    NgModule,
     TimepickerModule.forRoot()
     /* ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],

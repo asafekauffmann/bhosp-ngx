@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+/* import { TimepickerModule } from 'ngx-bootstrap/timepicker'; */
 
 @Component({
    selector: 'app-ngx',
@@ -8,6 +9,8 @@ import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
    styleUrls: ['./ngx.component.sass']
 })
 export class NgxComponent implements OnInit {
+
+   myTime: Date = new Date();
 
    colorTheme = 'theme-green';
    
@@ -31,7 +34,7 @@ export class NgxComponent implements OnInit {
    applyTheme(pop: any) {
       this.bsConfig = Object.assign({}, { containerClass: this.colorTheme });
       setTimeout(() => {
-        pop.show();
+         pop.show();
       });
     }
 
