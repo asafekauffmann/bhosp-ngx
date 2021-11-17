@@ -12,6 +12,8 @@ import { faClipboardCheck, faHome, faQuestionCircle, faSearch } from '@fortaweso
 })
 export class NgxComponent implements OnInit {
 
+   bsInlineValue = new Date();
+
    myTime: Date = new Date(); 
    
    colorTheme = 'theme-green';
