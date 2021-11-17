@@ -12,7 +12,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { FormsModule } from '@angular/forms';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -39,7 +39,8 @@ import { darkTheme } from './theme/dark-theme';
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     /* NgForm, */
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    FontAwesomeModule
     /* ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
       active: 'light'
