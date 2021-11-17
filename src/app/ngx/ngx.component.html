@@ -23,6 +23,11 @@
    </div>
  </nav>
 
+
+
+
+
+
 <nav aria-label="breadcrumb">
    <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -33,19 +38,26 @@
 
 
 
+
 <div class="container">
    <tabset>
       <tab heading="Basic title" id="tab1">
 
-         <div class="container">
-            <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
-               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
-            </button>
-            <hr>
-            <div id="collapseBasic" [collapse]="isCollapsed">
-               <div class="well well-lg card card-block card-header">Some content</div>
+         
+         <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+               Toggle collapse
+         </button>
+         <hr>
+         <div id="collapseBasic" [collapse]="isCollapsed">
+            <div class="well well-lg card card-block card-header">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat 
+                  turpis non sagittis ultrices. Nulla leo nisi, ullamcorper sit amet orci vitae, 
+                  porta convallis magna. Proin sed tortor at just
+               </p>
             </div>
          </div>
+         
 
       </tab>
 
@@ -98,7 +110,8 @@
    </tabset>
 </div>
 
-
+<br>
+<br>
 <div class="container">
    <div class="row">
       <div class="col-4">
@@ -119,7 +132,7 @@
 
 
 
-<div class="container">
+<!-- <div class="container">
    <div class="row">
       <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
          <input type="text"
@@ -129,42 +142,45 @@
                [bsConfig]="{ containerClass: 'theme-orange', showClearButton: true, clearPosition: 'right' }">
       </div>
    </div>
-</div>
+</div> -->
 
 
 
-
-
-
-<div class="row">
-   <div class="col-xs-12 col-12 col-md-4 col-lg-4 form-group mb-3">
-      <select
-         class="custom-select form-control from-select"
-         [(ngModel)]="colorTheme" (ngModelChange)="applyTheme(dp);">
-            <option value="theme-default">default</option>
-            <option value="theme-green">green</option>
-            <option value="theme-blue">blue</option>
-            <option value="theme-dark-blue">dark-blue</option>
-            <option value="theme-red">red</option>
-            <option value="theme-orange">orange</option>
-      </select>
-   </div>
-     
-   <div class="col-xs-12 col-12 col-md-5 col-lg-5 form-group mb-3">
-      <div class="form-group mb-3">
-         <div class="input-group">
-
-            <input type="text" class="form-control" bsDatepicker #dp="bsDatepicker" [bsConfig]="bsConfig">
-
-               <div class="input-group-btn">
-                  <button class="btn btn-success" (click)="dp.show()" [attr.aria-expanded]="dp.isOpen" type="button">
-                     Open
-                  </button>
-               </div>
+<br>
+<br>
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12 col-12 col-md-4 col-lg-4 form-group mb-3">
+         <select
+            class="custom-select form-control from-select"
+            [(ngModel)]="colorTheme" (ngModelChange)="applyTheme(dp);">
+               <option value="theme-default">default</option>
+               <option value="theme-green">green</option>
+               <option value="theme-blue">blue</option>
+               <option value="theme-dark-blue">dark-blue</option>
+               <option value="theme-red">red</option>
+               <option value="theme-orange">orange</option>
+         </select>
+      </div>
+        
+      <div class="col-xs-12 col-12 col-md-5 col-lg-5 form-group mb-3">
+         <div class="form-group mb-3">
+            <div class="input-group">
+   
+               <input type="text" class="form-control" bsDatepicker #dp="bsDatepicker" [bsConfig]="bsConfig">
+   
+                  <div class="input-group-btn">
+                     <button class="btn btn-success" (click)="dp.show()" [attr.aria-expanded]="dp.isOpen" type="button">
+                        Open
+                     </button>
+                  </div>
+            </div>
          </div>
       </div>
    </div>
 </div>
+
+
    
 
 
@@ -184,9 +200,14 @@
 </div>
 -->
 
+<br>
+<br>
+<div class="container">
+   <timepicker [(ngModel)]="myTime" ></timepicker>
+   <pre class="alert alert-info">Time is: {{ myTime }}</pre>
+</div>
 
-<!-- <timepicker [(ngModel)]="myTime"></timepicker>
-<pre class="alert alert-info">Time is: {{ myTime }}</pre> -->
+
 
 
 
