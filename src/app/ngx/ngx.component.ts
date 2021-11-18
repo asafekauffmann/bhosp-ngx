@@ -51,9 +51,4 @@ export class NgxComponent implements OnInit {
       });
     }
 
-  
-
-
- 
-
 }

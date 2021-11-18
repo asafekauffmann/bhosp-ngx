@@ -1,1 +1,21 @@
-<p>nav works!</p>
+<div class="myLogo">
+   <a (click)="show = !show">
+      <img src="../../../assets/logos/otto-White.png" width="100">
+   </a>
+</div>
+
+  
+<div class="navLeft">
+
+
+
+   
+   <div *ngIf="show; else elseBlock">
+      Text to show
+   </div>
+   <ng-template #elseBlock>
+      Alternate text while primary text is hidden
+   </ng-template>
+</div>
+
+
