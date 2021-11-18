@@ -1,21 +1,39 @@
 <div class="myLogo">
    <a (click)="show = !show">
-      <img src="../../../assets/logos/otto-White.png" width="100">
+      <img src="../../../assets/logos/otto-White.png" width="85">
    </a>
 </div>
 
   
 
+<div class="main">
 
+   <div class="navLeft" *ngIf="show; else elseBlock">
+      Text to show
+   </div>
+      
 
+   <ng-template class="mainAfter" #elseBlock>
+      
+   </ng-template>
 
-   
-<div class="navLeft" *ngIf="show; else elseBlock">
-   Text to show
+   <div class="navMain">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pellentesque magna, 
+         vel pellentesque mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+         fames ac turpis egestas. Curabitur tempus est est, sit amet pellentesque tortor rhoncus at. 
+         Nullam venenatis elementum nulla, nec dignissim velit pharetra sed. Ut quis dignissim felis. 
+         Pellentesque ac odio molestie, maximus erat eget, dictum leo. In gravida id erat eget laoreet. 
+         Nam porta, neque nec iaculis pellentesque, turpis erat porttitor arcu, eget bibendum ipsum nunc 
+         at mauris. Pellentesque diam arcu, scelerisque eget lacus in, aliquet sagittis sem. Nulla at augue 
+         sit amet orci lacinia efficitur. Nam nec dui sit amet ante efficitur iaculis id ac lectus. In luctus
+          sem metus, eu eleifend sapien posuere sed. Sed eu sem velit. Vestibulum velit neque, sodales nec 
+          enim vulputate, scelerisque rhoncus nisl. Aenean lobortis lorem eu arcu luctus, sit amet egestas 
+          urna finibus.
+      </p>
+   </div>
+
 </div>
+
+
    
 
- 
-<ng-template #elseBlock>
-   Alternate text while primary text is hidden
-</ng-template>
