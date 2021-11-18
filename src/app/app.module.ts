@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
+import { MainRouterComponent } from './components/main-router/main-router.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -29,7 +30,8 @@ import { darkTheme } from './theme/dark-theme';
     AppComponent,
     NgxComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    MainRouterComponent
     /* ThemeDirective */
   ],
   imports: [
