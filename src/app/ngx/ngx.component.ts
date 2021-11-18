@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
-/* import { TimepickerModule } from 'ngx-bootstrap/timepicker'; */
+/* import { TimepickerModule } from 'ngx-bootstrap/timepicker';  */
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faClipboardCheck, faHome, faQuestionCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
 

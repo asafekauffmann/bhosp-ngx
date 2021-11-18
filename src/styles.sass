@@ -1,27 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap')
 
-   
 $primaryBlue: #2B2AFC
 $primaryDarkBlue: #111064
 $primaryLightBlue: #e9e9fe
-
-   
+  
 $secondaryGray: #007DFF
 $secondaryDarkGray: #152536 
 $secondaryLightGray: #ABB5BE
 
-
 $thirdColor: #FC9109
 $thirdColorLight: #fdc884
-
 
 $black: #000
 $white: #FFF
 
-
 $textColor: #000000
 $bodyColor: #6C757D
-
 
 $gray-100: #F8F9FA
 $gray-200: #E9ECEF
@@ -33,12 +27,17 @@ $gray-700: #495057
 $gray-800: #343A40
 $gray-900: #212529
 
-
-  
 $succcess: #223B3D
 $fail: #DC3545
 $warning: #FFC107
 $links: #2B2AFC
+
+
+@mixin alignFlex
+   display: flex 
+   align-items: center
+   justify-content: space-between
+  
 
 
 
@@ -46,6 +45,7 @@ $links: #2B2AFC
    margin: 0
    padding: 0
    border: $gray-300
+   font-family: 'Inter', sans-serif
    
 
    
