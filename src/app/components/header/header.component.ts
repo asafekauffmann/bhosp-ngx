@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faClipboardCheck, faHome, faQuestionCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faClipboardCheck, faHome, faQuestionCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
    selector: 'app-header',
@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
          faHome, 
          faClipboardCheck, 
          faSearch, 
-         faQuestionCircle 
+         faQuestionCircle,
+         faAngleDown 
       )
    }
 
