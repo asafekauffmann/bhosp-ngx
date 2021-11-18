@@ -13,6 +13,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeaderComponent } from './components/header/header.component';
+import { NavComponent } from './components/nav/nav.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -25,7 +27,9 @@ import { darkTheme } from './theme/dark-theme';
 @NgModule({
   declarations: [
     AppComponent,
-    NgxComponent
+    NgxComponent,
+    HeaderComponent,
+    NavComponent
     /* ThemeDirective */
   ],
   imports: [
