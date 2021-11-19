@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-logo',
-  templateUrl: './logo.component.html',
-  styleUrls: ['./logo.component.sass']
+   selector: 'app-logo',
+   templateUrl: './logo.component.html',
+   styleUrls: ['./logo.component.sass']
 })
 export class LogoComponent implements OnInit {
 
-   show = true;
+   constructor() { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+   ngOnInit(): void {
+   }
 
 }
