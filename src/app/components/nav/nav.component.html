@@ -1,25 +1,16 @@
-<div class="myLogo">
-   <a (click)="show = !show">
-      <img src="../../../assets/logos/otto-White.png" width="85">
-   </a>
-</div>
-
-
 <div class="main">
-   <div class="navLeft" *ngIf="show; else elseBlock">
-      <p>Text to show</p>
+   <div>
+      <div class="navLeft" *ngIf="show; else elseBlock">
+         <p>Text to show</p>
+      </div>
+            
+      <ng-template class="mainAfter" #elseBlock> 
+      </ng-template>
    </div>
-         
-   <ng-template class="mainAfter" #elseBlock>
-      
-   </ng-template>
-
+   
 
    <app-main-router></app-main-router>
-   <!-- <div class="navMain">
-      <app-main-router></app-main-router>
-   </div> -->
-   
+
 </div>
 
 

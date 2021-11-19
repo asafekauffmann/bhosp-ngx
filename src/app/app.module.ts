@@ -17,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MainRouterComponent } from './components/main-router/main-router.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -33,7 +34,8 @@ import { darkTheme } from './theme/dark-theme';
     HeaderComponent,
     NavComponent,
     MainRouterComponent,
-    DashboardComponent
+    DashboardComponent,
+    LogoComponent
     /* ThemeDirective */
   ],
   imports: [
