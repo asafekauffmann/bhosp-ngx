@@ -1,3 +1,4 @@
+import { AberturaComponent } from './abertura/abertura.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,9 @@ const routes: Routes = [
    },
    {
       path: 'login', component: LoginComponent
+   },
+   {
+      path: 'abertura', component: AberturaComponent
    }
 ];
 

@@ -3,7 +3,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 /* import { TimepickerModule } from 'ngx-bootstrap/timepicker';  */
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faClipboardCheck, faHome, faQuestionCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardCheck, faHeart, faHome, faHotel, faLaugh, faQuestionCircle, faSearch, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
    selector: 'app-ngx',
@@ -33,7 +33,11 @@ export class NgxComponent implements OnInit {
          faHome, 
          faClipboardCheck, 
          faSearch, 
-         faQuestionCircle 
+         faQuestionCircle,
+         faHotel,
+         faLaugh,
+         faHeart,
+         faSuitcase 
       )
    }
 

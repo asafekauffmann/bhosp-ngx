@@ -1,9 +1,27 @@
-#circle
-   background-color: lightblue
-   border-radius: 50%
-   width: 100px
-   height: 100px
-   position: absolute
-   top: -40px
-   left: -40px
-   z-index: -1
+@import "src/styles"
+
+*
+   overflow-x: hidden
+   overflow-y: hidden
+
+.containerAll
+   
+   
+   #circleUp
+      background-color: lightblue
+      border-radius: 50%
+      width: 380px
+      height: 380px
+      position: absolute
+      top: -180px
+      left: -120px
+      z-index: -1
+
+   #circleDown
+      position: absolute
+      bottom: 0
+      right: 0
+      z-index: -1
+   
+   .content
+      @include alignFlexLogo
