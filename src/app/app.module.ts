@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MainRouterComponent } from './components/main-router/main-router.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -31,7 +32,8 @@ import { darkTheme } from './theme/dark-theme';
     NgxComponent,
     HeaderComponent,
     NavComponent,
-    MainRouterComponent
+    MainRouterComponent,
+    DashboardComponent
     /* ThemeDirective */
   ],
   imports: [
