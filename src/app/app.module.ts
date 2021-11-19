@@ -20,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { LoginComponent } from './login/login.component';
 import { ToggleSwitchComponent } from './login/toggle-switch/toggle-switch.component';
+import { AberturaComponent } from './abertura/abertura.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -39,7 +40,8 @@ import { darkTheme } from './theme/dark-theme';
     DashboardComponent,
     LogoComponent,
     LoginComponent,
-    ToggleSwitchComponent
+    ToggleSwitchComponent,
+    AberturaComponent
     /* ThemeDirective */
   ],
   imports: [

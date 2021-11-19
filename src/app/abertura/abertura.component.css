@@ -1,0 +1,11 @@
+#circle {
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -1;
+}
+/*# sourceMappingURL=abertura.component.css.map */
