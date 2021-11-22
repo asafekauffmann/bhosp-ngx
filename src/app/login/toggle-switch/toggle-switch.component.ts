@@ -12,8 +12,16 @@ export class ToggleSwitchComponent implements OnInit {
    ngOnInit(): void {
    }
 
+
    recuperaDarkModeCssEtoggle() {
       
    }
+      
 
 }
+
+
+
+
+
+
