@@ -19,6 +19,10 @@
   height: 100%;
 }
 
+.fullHeight .img-back {
+  opacity: 0.4;
+}
+
 .fullHeight .toggleMode {
   position: absolute;
   top: 30px;
@@ -75,7 +79,7 @@
 }
 
 .fullHeight .sizeCard form .buttonContent button {
-  padding: 10px 100px;
+  padding: 10px 110px;
   color: white;
 }
 /*# sourceMappingURL=login.component.css.map */

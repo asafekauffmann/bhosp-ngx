@@ -1,16 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>BhospNgx</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We">
-  <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+   <meta charset="utf-8">
+   <title>BhospNgx</title>
+   <base href="/">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We">
+   <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+   <style>
+      html, img, video, iframe, button {filter: invert(1) hue-rotate(180deg)}
+
+      .invert {
+         filter: invert(1) hue-rotate(180deg)
+      }
+   </style>
 </head>
 <body>
-  <app-root></app-root>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <app-root></app-root>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <script>
+      const estiloComentado = '/*html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}*/';
+      const estiloDescomentado = 'html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}';
+      let estiloAtivo = false;
+      let indexEstilo = 0;
+
+      let styles = document.getElementsByTagName('style')
+      for (let index = 0; index < styles.length; index++) {
+
+         let styleToCheck = document.getElementsByTagName('style')[index].innerHTML;
+         if(styleToCheck.includes(estiloComentado))
+         {
+            indexEstilo = index;
+         }
+      }
+
+      function recuperaDarkModeCssEtoggle()
+      {
+         console.log('entrou')
+         if(!estiloAtivo)
+         {
+            let darkMode = document.getElementsByTagName('style')[indexEstilo].innerHTML
+            darkMode = darkMode.replace(estiloComentado, estiloDescomentado)
+            document.getElementsByTagName('style')[indexEstilo].innerHTML = darkMode
+
+            estiloAtivo = !estiloAtivo;
+         }
+         else
+         {
+            let darkModeDescomentado = document.getElementsByTagName('style')[indexEstilo].innerHTML
+            darkModeDescomentado = darkModeDescomentado.replace(estiloDescomentado, estiloComentado)
+            document.getElementsByTagName('style')[indexEstilo].innerHTML = darkModeDescomentado
+
+            estiloAtivo = !estiloAtivo;
+         }
+      }
+
+      function adicionaDarkMode()
+      {
+         let darkMode =  recuperaDarkModeCssEtoggle()()
+         darkMode = darkMode.replace(styleComent, styleToAdd)
+      }
+
+      function removeDarkMode()
+      {
+         let darkMode =  recuperaDarkModeCssEtoggle()()
+         darkMode = darkMode.replace(styleToAdd, styleComent)
+      }
+
+      recuperaDarkModeCssEtoggle()
+  </script>
 </body>
 </html>
