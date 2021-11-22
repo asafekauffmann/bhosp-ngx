@@ -21,6 +21,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { LoginComponent } from './login/login.component';
 import { ToggleSwitchComponent } from './login/toggle-switch/toggle-switch.component';
 import { AberturaComponent } from './abertura/abertura.component';
+import { MenuAberturaComponent } from './abertura/menu-abertura/menu-abertura.component';
 
 /* 
 import { ThemeDirective } from './theme/theme.directive';
@@ -41,7 +42,8 @@ import { darkTheme } from './theme/dark-theme';
     LogoComponent,
     LoginComponent,
     ToggleSwitchComponent,
-    AberturaComponent
+    AberturaComponent,
+    MenuAberturaComponent
     /* ThemeDirective */
   ],
   imports: [
