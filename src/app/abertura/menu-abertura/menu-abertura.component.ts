@@ -1,6 +1,8 @@
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { faHeart, faHotel, faSuitcase, faLaugh } from '@fortawesome/free-solid-svg-icons';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+
 
 @Component({
    selector: 'app-menu-abertura',
@@ -9,7 +11,9 @@ import { faHeart, faHotel, faSuitcase, faLaugh } from '@fortawesome/free-solid-s
 })
 export class MenuAberturaComponent implements OnInit {
 
-   constructor(library: FaIconLibrary) {
+   modalRef?: BsModalRef;
+
+   constructor(library: FaIconLibrary, private modalService: BsModalService) {
 
       library.addIcons (
          faSuitcase,
@@ -20,6 +24,10 @@ export class MenuAberturaComponent implements OnInit {
    }
 
    ngOnInit(): void {
+   }
+
+   openModal(template: TemplateRef<any>) {
+      this.modalRef = this.modalService.show(template);
    }
 
 }
