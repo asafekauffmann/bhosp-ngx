@@ -2,7 +2,9 @@
 
 <app-logo (click)="show = !show"></app-logo>
 
-<app-nav *ngIf="show; else elseBlock"></app-nav>
+<app-nav *ngIf="show; else elseBlock">
+   
+</app-nav>
 
 <ng-template class="mainAfter" #elseBlock>
    <app-main-router></app-main-router>
