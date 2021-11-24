@@ -11,9 +11,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class MenuAberturaComponent implements OnInit {
 
-   modalRef?: BsModalRef;
-
-   constructor(library: FaIconLibrary, private modalService: BsModalService) {
+   constructor(library: FaIconLibrary) {
 
       library.addIcons (
          faSuitcase,
@@ -24,10 +22,6 @@ export class MenuAberturaComponent implements OnInit {
    }
 
    ngOnInit(): void {
-   }
-
-   openModal(template: TemplateRef<any>) {
-      this.modalRef = this.modalService.show(template);
    }
 
 }
