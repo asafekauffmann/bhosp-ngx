@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-   selector: 'app-toggle-switch',
-   templateUrl: './toggle-switch.component.html',
-   styleUrls: ['./toggle-switch.component.sass']
+   selector: 'app-dark-mode',
+   templateUrl: './dark-mode.component.html',
+   styleUrls: ['./dark-mode.component.sass']
 })
-export class ToggleSwitchComponent implements OnInit {
+export class DarkModeComponent implements OnInit {
 
    estiloComentado = '/*html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}*/';
    estiloDescomentado = 'html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}';
    estiloAtivo = false;
    indexEstilo = 0;
+
 
    constructor() { 
       let styles = document.getElementsByTagName('style')
@@ -24,12 +25,6 @@ export class ToggleSwitchComponent implements OnInit {
    }
 
    ngOnInit(): void {
-      /* let referenciaAngular = this;
-      const apps: HTMLElement = document.getElementById('darkSwitch') as HTMLElement
-      apps.addEventListener('click', function() {
-         referenciaAngular.recuperaDarkModeCssEtoggle()
-      }) */
-
    }
 
    recuperaDarkModeCssEtoggle(event: any) {
@@ -53,21 +48,4 @@ export class ToggleSwitchComponent implements OnInit {
       }
    }
 
-   /* adicionaDarkMode(this: any) {
-      const darkMode =  this.recuperaDarkModeCssEtoggle()
-      this.darkMode = darkMode.replace(this.styleComent, this.styleToAdd)
-   }
-
-   removeDarkMode(this: any) {
-      let darkMode =  this.threcuperaDarkModeCssEtoggle()
-      darkMode = darkMode.replace(this.styleToAdd, this.styleComent)
-   } */
-} 
-
-
-
-
-
-
-
-
+}
