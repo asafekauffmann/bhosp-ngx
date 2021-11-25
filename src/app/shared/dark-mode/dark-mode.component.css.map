@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACJ,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,GAAG;CAAG",
     "sources": [
         "dark-mode.component.sass"
     ],
