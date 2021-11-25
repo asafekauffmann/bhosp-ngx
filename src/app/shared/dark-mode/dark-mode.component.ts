@@ -35,7 +35,7 @@ export class DarkModeComponent implements OnInit {
    }
 
    recuperaDarkModeCssEtoggle(event: any) {
-      event.stopPropagation();
+      event.stopPropagation(); 
       console.log(event);
       if (!this.estiloAtivo) { 
          let darkMode = document.getElementsByTagName('style')[this.indexEstilo].innerHTML
