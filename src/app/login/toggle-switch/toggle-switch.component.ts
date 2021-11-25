@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const recuperaDarkModeCssEtoggle: any;
 
 @Component({
    selector: 'app-toggle-switch',
@@ -7,17 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToggleSwitchComponent implements OnInit {
 
+   callFun() {
+      recuperaDarkModeCssEtoggle();
+   }
+
    constructor() { }
 
    ngOnInit(): void {
    }
-
-
-   recuperaDarkModeCssEtoggle(): void {
-      /* document.body.classList.toggle('darkSwitch'); */
-   }
       
-
 }
 
 
