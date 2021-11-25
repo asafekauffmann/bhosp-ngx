@@ -13,8 +13,8 @@ export class ToggleSwitchComponent implements OnInit {
    }
 
 
-   recuperaDarkModeCssEtoggle() {
-      
+   recuperaDarkModeCssEtoggle(): void {
+      /* document.body.classList.toggle('darkSwitch'); */
    }
       
 
