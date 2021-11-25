@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
    selector: 'app-dark-mode',
@@ -13,7 +15,8 @@ export class DarkModeComponent implements OnInit {
    indexEstilo = 0;
 
 
-   constructor() { 
+   constructor(library: FaIconLibrary) { 
+
       let styles = document.getElementsByTagName('style')
          for (let index = 0; index < styles.length; index++) {
 
@@ -22,6 +25,10 @@ export class DarkModeComponent implements OnInit {
                this.indexEstilo = index;
             }
          }
+
+      library.addIcons (
+         faAdjust
+      ) 
    }
 
    ngOnInit(): void {
