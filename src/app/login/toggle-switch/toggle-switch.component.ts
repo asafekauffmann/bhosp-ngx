@@ -59,10 +59,6 @@ export class ToggleSwitchComponent implements OnInit {
    
    styleComent(styleToAdd: (styleToAdd: any, styleComent: any) => any, styleComent: any): any { }
    styleToAdd(styleToAdd: any, styleComent: any): any { }
-     
-
-
-
 
 
 
