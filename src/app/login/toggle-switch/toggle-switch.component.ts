@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-declare const recuperaDarkModeCssEtoggle: any;
+
+declare const recuperaDarkModeCssEtoggle: any; 
 
 @Component({
    selector: 'app-toggle-switch',
@@ -7,12 +8,13 @@ declare const recuperaDarkModeCssEtoggle: any;
    styleUrls: ['./toggle-switch.component.sass']
 })
 export class ToggleSwitchComponent implements OnInit {
-
-   callFun() {
+   
+   callFun(): void {
       recuperaDarkModeCssEtoggle();
+   }  
+   constructor() {
+      
    }
-
-   constructor() { }
 
    ngOnInit(): void {
    }
