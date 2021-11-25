@@ -34,9 +34,7 @@
               "src/styles.sass",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
             ],
-            "scripts": [
-               "src/switch-one-line.js"
-            ]
+            "scripts": [ ]
           },
           "configurations": {
             "production": {
