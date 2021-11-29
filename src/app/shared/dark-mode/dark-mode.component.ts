@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
    selector: 'app-dark-mode',
@@ -9,8 +7,8 @@ import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 })
 export class DarkModeComponent implements OnInit {
 
-   estiloComentado = '/*html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}*/';
-   estiloDescomentado = 'html, img, video, iframe, button {filter: invert(0.90) hue-rotate(180deg)}';
+   estiloComentado = '/*html, img, video, iframe, button {filter: invert(0.95) hue-rotate(180deg)}*/';
+   estiloDescomentado = 'html, img, video, iframe, button {filter: invert(0.95) hue-rotate(180deg)}';
    estiloAtivo = false;
    indexEstilo = 0;
 
