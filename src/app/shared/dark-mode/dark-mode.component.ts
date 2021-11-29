@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./dark-mode.component.sass']
 })
 export class DarkModeComponent implements OnInit {
-
    estiloComentado = '/*html, img, video, iframe, button {filter: invert(0.95) hue-rotate(180deg)}*/';
    estiloDescomentado = 'html, img, video, iframe, button {filter: invert(0.95) hue-rotate(180deg)}';
    estiloAtivo = false;
    indexEstilo = 0;
-
 
    constructor() { 
 
