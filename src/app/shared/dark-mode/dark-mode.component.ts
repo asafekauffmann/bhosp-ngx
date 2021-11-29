@@ -15,7 +15,7 @@ export class DarkModeComponent implements OnInit {
    indexEstilo = 0;
 
 
-   constructor(library: FaIconLibrary) { 
+   constructor() { 
 
       let styles = document.getElementsByTagName('style')
          for (let index = 0; index < styles.length; index++) {
@@ -25,10 +25,6 @@ export class DarkModeComponent implements OnInit {
                this.indexEstilo = index;
             }
          }
-
-      library.addIcons (
-         faAdjust
-      ) 
    }
 
    ngOnInit(): void {
