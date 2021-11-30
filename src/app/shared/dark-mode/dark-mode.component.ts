@@ -13,6 +13,7 @@ export class DarkModeComponent implements OnInit {
    //estiloAtivo = false;
    //indexEstilo = 0;
 
+   
 
    constructor(private toggleService: ToggleDarkService) { 
 
