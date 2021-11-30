@@ -2,14 +2,17 @@
    <img class="img-back" src="../../assets/images/Image background.png" alt="background">
 
    <div class="toggleMode">
-      <app-dark-mode></app-dark-mode>
+      <app-dark-mode (click)="show = !show"></app-dark-mode>
    </div>
       
    <div class="card sizeCard">
       <form>
          <span class="modeLogo">
-            <img class="logoOtto" src="../../assets/logos/otto-Oficial.png" alt="logo">
+            <img *ngIf="show; else elseBlock" class="logoOtto" src="../../assets/logos/otto-Oficial.png" alt="logo">
             <!-- src="../../assets/logos/otto-White.png" -->
+            <ng-template #elseBlock>
+               <img src="../../assets/logos/otto-White.png" class="logoOtto">
+            </ng-template>
          </span>
 
          <span>Acesse seu perfil</span>
