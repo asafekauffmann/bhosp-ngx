@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-abertura',
-  templateUrl: './abertura.component.html',
-  styleUrls: ['./abertura.component.sass']
+   selector: 'app-abertura',
+   templateUrl: './abertura.component.html',
+   styleUrls: ['./abertura.component.sass']
 })
 export class AberturaComponent implements OnInit {
 
-  constructor() { }
+   constructor(private elementRef: ElementRef) { }
 
-  ngOnInit(): void {
-  }
+
+
+   ngOnInit(): void {
+      let test = this.elementRef.nativeElement.querySelector("#app");
+      console.log(test);
+      // test.show();
+   }
+
+
+   botaoTest() : void {
+      let test = this.elementRef.nativeElement.querySelector("#app");
+      console.log(test.value);
+   }
+
 
 }
